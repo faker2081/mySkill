@@ -81,3 +81,13 @@ git push -u origin main
 5.输入指令：git push -u origin master
 
 https://blog.csdn.net/s_p_j/article/details/79562047
+
+### 使用心得
+
+master：仅仅是自己github的repository的一个分支（Branch），可以自己命名（命名为main、dev...）的都行。
+
+#### 更新理解
+
+- add：添加内容
+- commit：提交所添加的内容
+- pull：整合到仓库（github）

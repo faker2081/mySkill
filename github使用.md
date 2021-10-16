@@ -9,7 +9,7 @@ git init
 **第二步：将项目的所有文件添加到仓库中**
 
 ```c
-git add .
+git add . # 也能单独添加一个文件，把后面的点换成文件名即可
 ```
 
 **第三步：将add的文件commit到仓库**
@@ -86,8 +86,33 @@ https://blog.csdn.net/s_p_j/article/details/79562047
 
 master：仅仅是自己github的repository的一个分支（Branch），可以自己命名（命名为main、dev...）的都行。
 
+### 以后更新仓库
+
+1. ```text
+   git remote add origin https://github.com/[用户名]/[仓库名].git
+   ```
+
+2. ```text
+   git branch -M [分支名] # 新建分支（可选），如若上传到老分支中就不用该步
+   ```
+
+3. ```text
+   git add [要更新的文件名（加上后缀）]
+   ```
+
+4. ```text
+   git commit -m "first commit"
+   ```
+
+5. ```text
+   git push -u origin [分支名] # 后面的分支指定你要把add的文件上传到哪个分支，其他教程一般为master、main...
+   ```
+
+
+
 #### 更新理解
 
 - add：添加内容
 - commit：提交所添加的内容
-- pull：整合到仓库（github）
+- push：整合到仓库（github）
+
